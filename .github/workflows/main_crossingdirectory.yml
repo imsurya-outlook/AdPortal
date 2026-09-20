@@ -50,6 +50,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'Crossingdirectory'
-          slot-name: 'Production'
+          slot-name: ''
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A5F53FDA391F4369AC9BDFA39F5B9B34 }}
