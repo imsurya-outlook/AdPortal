@@ -93,7 +93,7 @@ Upload rules: max 10 images per advertisement, max 5 MB each, JPG / PNG / WebP o
 
 ## Going to Azure
 
-1. Create an Azure App Service (Windows or Linux, .NET 8) and an Azure SQL Database.
+1. Create an Azure App Service (Windows or Linux, .NET 10) and an Azure SQL Database.
 2. Create a storage account plus a blob container named advertisements.
 3. In App Service configuration set: ConnectionStrings:DefaultConnection, Database:Provider = SqlServer,
    Storage:Provider = AzureBlob, Storage:ConnectionString, SeedAdmin:Email, SeedAdmin:Password.

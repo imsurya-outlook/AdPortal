@@ -21,12 +21,9 @@ public static class DbSeeder
         }
 
         var adminEmail = configuration["SeedAdmin:Email"] ?? "admin@localads.com";
-        var adminPassword = configuration["SeedAdmin:Password"] ?? "Admin@201016";
-        var admin = await userManager.FindByEmailAsync(adminEmail);
-        if(admin is not null)
-           await userManager.DeleteAsync(admin);
+        var adminPassword = configuration["SeedAdmin:Password"] ?? "Admin@12345";
 
-        admin = await userManager.FindByEmailAsync(adminEmail);
+        var admin = await userManager.FindByEmailAsync(adminEmail);
         if (admin is null)
         {
             admin = new ApplicationUser
